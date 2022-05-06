@@ -21,7 +21,7 @@ namespace TechbodiaTraining.Test
             int number = 0;
             for (int romanNumer = 0; romanNumer < romanNumbers.Length; romanNumer++)
             {
-                if (!romanValues.TryGetValue(romanNumbers[romanNumer], out int output))
+                if (!romanValues.TryGetValue(romanNumbers[romanNumer], out int romanValue))
                 {
                     return "Invalid roman number";
                 }
