@@ -14,8 +14,7 @@ namespace TechbodiaTraining.Test
         [TestCase(1994, "MCMXCIV")]
         [TestCase(2041, "MMXLI")]
         [TestCase(1666, "MDCLXVI")]
-        
-        public void RomanNumberI_Should_equal_to_1(int expected, string roman)
+        public void RomanNumber_roman_number_input_should_equal_to_expected(int expected, string roman)
         {
             Assert.AreEqual(expected, int.Parse(RomanDecoderService.DecodeRomanToInteger(roman)));
         }
